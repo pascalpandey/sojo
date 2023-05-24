@@ -17,7 +17,7 @@ function Page1() {
     <div class="flex flex-col gap-6">
       <span class="text-4xl">What type of worker are you looking for?</span>
       <span class="text-xl">Onboard with us and start finding workers to hire</span>
-      <Dropdown options={options}/>
+      <Dropdown options={options} page={'Page1'}/>
     </div>
   );
 }

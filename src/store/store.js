@@ -8,6 +8,13 @@ export const StoreProvider = ({ children }) => {
   const initialState = {
     Page1: "Welder",
     Page2: "",
+    Page3: "",
+    Page4: "",
+    Page5: "",
+    Page6Item1: "",
+    Page6Item2: "",
+    Page6Item3: "",
+    Page6Item4: "",
   };
 
   const [state, setState] = useState(initialState);

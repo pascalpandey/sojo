@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useStore } from "../store/store";
 
-function Dropdown({ options }) {
-  const [selected, setSelected] = useState(options[0]);
+function Dropdown({ options, page }) {
+  const { state, dispatch } = useStore();
   return (
     <select
-      class="h-12 outline outline-2 outline-[#0166C0] rounded-sm"
-      defaultValue={selected}
-      onChange={(e) => setSelected(e.target.value)}
+      class="h-12 rounded-sm outline outline-2 outline-[#0166C0]"
+      defaultValue={state[page]}
+      onChange={(e) => dispatch({ page: page, data: e.target.value })}
     >
       {options.map((option) => (
         <option value={option}>{option}</option>
