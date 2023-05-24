@@ -12,7 +12,7 @@ function Dialog({ close }) {
         <span class="text-3xl">Result</span>
         {Object.values(state).map((ans, i) => (
           <div class="flex">
-            <span class="pr-6 whitespace-nowrap">{i} :</span>
+            <span class="pr-6 whitespace-nowrap">Q{i+1} :</span>
             <span>{ans ? ans : 'Not filled yet'}</span>
           </div>
         ))}
