@@ -11,7 +11,7 @@ function Page2() {
       <span class="text-4xl">How many workers are you looking to hire?</span>
       <TextInput
         options={options}
-        page={"Page2"[0]}
+        page={"Page2"}
       />
     </div>
   );

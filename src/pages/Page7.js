@@ -4,6 +4,7 @@ function Page7() {
   const { state } = useStore();
   return (
     <div>
+      {console.log(state)}
       <p class="pb-4 text-4xl">Thank you for onboarding with us</p>
       <p class="pb-4 text-xl leading-9">
         Before continuing, we need to verify your email address. Please check
